@@ -1,5 +1,9 @@
 @import 'mobile';
 @import 'tablet';
-@import 'desktop';
+
+@media screen and (min-width: 1280px) {
+    @import 'desktop';
+}
+
 
 

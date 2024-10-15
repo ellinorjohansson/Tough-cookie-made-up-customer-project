@@ -1,1 +1,1 @@
-body{background-color:aqua}body{font-family:"Jockey One","Roboto Condensed",sans-serif}
+@media screen and (min-width: 1280px){body{font-family:"Jockey One","Roboto Condensed",sans-serif;background-color:#ff0}main{border:2px solid green;display:grid;grid-template-columns:repeat(12, 1fr);gap:16px}}

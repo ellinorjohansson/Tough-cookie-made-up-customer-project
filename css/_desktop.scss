@@ -1,3 +1,11 @@
 body {
     font-family: 'Jockey One', 'Roboto Condensed', sans-serif;
+    background-color: yellow;
+}
+
+main {
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
 }
