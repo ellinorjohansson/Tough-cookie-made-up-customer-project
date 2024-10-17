@@ -50,6 +50,8 @@ h1 {
         min-height: 50vh;
         .image {
             grid-column: span 5;
+            max-width: 100%;
+            height: auto;
         }
         .bottom-text {
             grid-column: span 6;
