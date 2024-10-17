@@ -25,6 +25,7 @@ h1 {
     grid-column: span 11;
     min-height: 100vh;
     grid-row: span 2;
+    background-color: black;
     .top, .bottom {
         display: grid;
         gap: 16px;
@@ -36,10 +37,11 @@ h1 {
         min-height: 50vh;
         .page-title {
             grid-column: span 4;
-            
+            color: green;
         }
         .top-text {
             grid-column: span 7;
+            color: green;
         }
     }
     
@@ -51,6 +53,7 @@ h1 {
         }
         .bottom-text {
             grid-column: span 6;
+            color: purple;
         }
     }
 
