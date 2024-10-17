@@ -6,6 +6,7 @@ body {
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 16px;
 }
 
@@ -23,14 +24,16 @@ h1 {
 .page1 {
     grid-column: span 11;
     min-height: 100vh;
+    grid-row: span 2;
     .top, .bottom {
         display: grid;
         gap: 16px;
         grid-template-columns: repeat(11, 1fr);
-        grid-template-rows: repeat(15, 1fr);
     }
 
     .top {
+        grid-row: 1;
+        min-height: 50vh;
         .page-title {
             grid-column: span 4;
             
@@ -41,6 +44,8 @@ h1 {
     }
     
     .bottom {
+        grid-row: 2;
+        min-height: 50vh;
         .image {
             grid-column: span 5;
         }
