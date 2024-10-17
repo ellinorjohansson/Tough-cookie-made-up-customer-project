@@ -47,17 +47,29 @@ h1 {
         }
 
         .tahini {
-            font-size: 2rem;
+            font-size: 6rem;
+            position: relative;
+            z-index: 1000;
         }
 
         .drizzle {
-            font-size: 1.5rem;
+            font-size: 3rem;
             color: #895ed9;
+            position: absolute;
+            text-align: right;
+            top: 90px;
+            left: 346px;
         }
 
         .chickpeas {
-            font-size: 1.5rem;
+            font-size: 3rem;
             color: #fff236;
+            position: absolute;
+            text-align: left;
+            left: 270px;
+            top: 180px;
+            z-index: 0;
+            
         }
 
         .top-text {
