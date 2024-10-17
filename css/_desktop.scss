@@ -12,6 +12,7 @@ main {
 
 header {
     flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -25,6 +26,7 @@ h1 {
     grid-column: span 11;
     min-height: 100vh;
     grid-row: span 2;
+    border-right: 16px solid #fff236;
     .top, .bottom {
         display: grid;
         gap: 16px;
@@ -89,6 +91,16 @@ h1 {
         .bottom-text {
             grid-column: span 6;
             color: #895ed9;
+            background-color: #ffffff;
+            font-size: 2rem;
+            text-align: left;
+            padding: 20px;
+            border-left: 16px solid #fff236;
+        }
+        .explore-menu {
+            color: black;
+            text-transform: uppercase;
+            display: block;
         }
     }
 
