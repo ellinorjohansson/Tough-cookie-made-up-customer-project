@@ -3,12 +3,36 @@ body {
     background-color: aqua;
 }
 
+main {
+    width: 100%;
+    overflow-x: hidden; 
+    box-sizing: border-box;
+    grid-template-columns: 1fr; 
+    gap: 8px 
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }  
+
 header {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     background-color: black;
     color: antiquewhite;
+    padding: 20px;
+    border-bottom: 16px solid #fff236;
     h1 {
         margin: 0;
+        align-items: center;
     }
+}
+
+.page-title, .top-text, .image, .bottom-text {
+    grid-column: span 1; 
 }

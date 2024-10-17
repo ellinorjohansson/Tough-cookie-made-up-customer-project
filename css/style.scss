@@ -1,7 +1,10 @@
 @import 'vendor/normalize';
 
 @import 'mobile';
-@import 'tablet';
+
+@media screen and (min-width: 768px) {
+    @import 'tablet';
+}
 
 @media screen and (min-width: 1280px) {
     @import 'desktop';
