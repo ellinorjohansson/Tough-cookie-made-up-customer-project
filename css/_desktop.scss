@@ -15,11 +15,88 @@ header {
     align-items: center;
 }
 
+button {
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border: 0;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 4;
+    pointer-events: none;
+    span {
+        display: block;
+        width: 50px;
+        height: 8px;
+        background-color: #fff236;
+        border-radius: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+input {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+}
+
+input:checked + .menu span {
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+input:checked + .menu span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked + .menu span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+input:checked + .menu span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(71, 0, 186,);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: black;
+    visibility: hidden;
+    z-index: 3;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
+
+input:checked + .menu nav {
+    visibility: visible;
+    opacity: 1;
+}
+
 h1 {
     writing-mode: vertical-rl;
     text-orientation: upright;
     text-transform: uppercase;
     font-size: 2.5rem;
+    padding-top: 70px;
 }
 
 .page1 {
@@ -51,7 +128,7 @@ h1 {
 
         .tahini {
             font-size: 6rem;
-            z-index: 1000;
+            z-index: 1;
         }
 
         .drizzle {
