@@ -6,7 +6,6 @@ body {
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 16px;
 }
 
@@ -43,6 +42,7 @@ input {
     width: 70px;
     height: 70px;
     opacity: 0;
+    cursor: pointer;
 }
 
 input:checked + .menu span {
@@ -92,7 +92,7 @@ input:checked + .menu nav {
 }
 
 h1 {
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
     text-orientation: upright;
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -102,7 +102,6 @@ h1 {
 .page1 {
     grid-column: span 11;
     min-height: 100vh;
-    grid-row: span 2;
     border-right: 16px solid #fff236;
     .top, .bottom {
         display: grid;
@@ -112,7 +111,6 @@ h1 {
     }
 
     .top {
-        grid-row: 1;
         min-height: 50vh;
         .page-title {
             grid-column: span 4;
@@ -136,7 +134,7 @@ h1 {
             color: #895ed9;
             position: absolute;
             text-align: right;
-            top: 90px;
+            top: 92px;
             left: 217px;
         }
 
@@ -146,7 +144,7 @@ h1 {
             position: absolute;
             text-align: left;
             left: 145px;
-            top: 185px;
+            top: 189px;
             z-index: 0; 
         }
 
@@ -160,7 +158,6 @@ h1 {
     }
     
     .bottom {
-        grid-row: 2;
         min-height: 50vh;
         .image {
             grid-column: span 5;
@@ -182,6 +179,28 @@ h1 {
             display: block;
         }
     }
-
 }
 
+.page2 {
+    grid-column: span 11;
+    min-height: 100vh;
+    .base-grid {
+        min-height: 40vh;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(11, 1fr);
+        border: 3px solid red;
+    }
+    .image1 {
+        grid-column: 1 / span 3;
+        border: 3px solid red;
+    }
+    .image2 {
+        grid-column: span 4;
+        border: 3px solid red;
+    }
+    .image3 {
+        grid-column: span 4;
+        border: 3px solid red;
+    }
+}
