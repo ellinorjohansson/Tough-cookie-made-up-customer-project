@@ -64,14 +64,16 @@ input:checked + .menu span:nth-child(3) {
 
 nav {
     position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(71, 0, 186,);
+    top: 0;
+    left: 110px;
+    background-color: #ac76ff;
     width: 100vw;
     height: 100vh;
     opacity: 0;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    color: black;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
     visibility: hidden;
     z-index: 3;
     ul {
@@ -130,21 +132,21 @@ h1 {
         }
 
         .drizzle {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: #895ed9;
             position: absolute;
             text-align: right;
-            top: 92px;
+            top: 70px;
             left: 217px;
         }
 
         .chickpeas {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: #fff236;
             position: absolute;
             text-align: left;
             left: 145px;
-            top: 189px;
+            top: 170px;
             z-index: 0; 
         }
 
@@ -193,14 +195,20 @@ h1 {
     }
     .image1 {
         grid-column: 1 / span 3;
+        max-width: 100%;
+        height: auto;
         border: 3px solid red;
     }
     .image2 {
         grid-column: span 4;
+        max-width: 100%;
+        height: auto;
         border: 3px solid red;
     }
     .image3 {
         grid-column: span 4;
+        max-width: 100%;
+        height: auto;
         border: 3px solid red;
     }
 
