@@ -5,13 +5,28 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 110px repeat(11, 1fr);
     gap: 16px;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 72px; // Samma bredd som den första kolumnen i `main`
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between; // Detta håller knappen och h1 separerade
+    z-index: 10; // Se till att den ligger ovanpå allt annat
+}
+
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 11;
 }
 
 button {
@@ -63,6 +78,10 @@ input:checked + .menu span:nth-child(3) {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: fixed;
     top: 0;
     left: 110px;
@@ -84,7 +103,6 @@ nav {
         flex-direction: column;
         height: 100%;
         justify-content: space-evenly;
-        text-align: center;
     }
 }
 
@@ -93,16 +111,22 @@ input:checked + .menu nav {
     opacity: 1;
 }
 
-h1 {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    padding-top: 70px;
+.though-cookie {
+    writing-mode: vertical-rl; /* Vertikal text */
+    text-orientation: upright; /* Gör så att varje bokstav står upprätt */
+    text-transform: uppercase; /* Gör texten till versaler */
+    font-size: 2rem; /* Justera storleken efter behov */
+    color: white; /* Ändra färg om du vill */
+    display: flex;
+    flex-direction: column; /* Gör så att varje bokstav ligger under varandra */
+    align-items: center; /* Centrera texten horisontellt */
+    margin: 0; /* Ta bort standardmarginaler */
+    padding: 0; /* Ta bort eventuell padding */
+    margin-top: 80px;
 }
 
 .page1 {
-    grid-column: span 11;
+    grid-column: 2 / span 11;
     min-height: 100vh;
     border-right: 16px solid #fff236;
     .top, .bottom {
@@ -184,7 +208,7 @@ h1 {
 }
 
 .page2 {
-    grid-column: span 11;
+    grid-column: 2 / span 11;
     min-height: 100vh;
     .base-grid {
         min-height: 40vh;
