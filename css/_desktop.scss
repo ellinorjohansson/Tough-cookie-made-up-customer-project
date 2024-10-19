@@ -212,41 +212,61 @@ input:checked + .menu nav {
     grid-column: 2 / span 11;
     min-height: 100vh;
     .base-grid {
-        min-height: 40vh;
         display: grid;
         gap: 10px;
         grid-template-columns: repeat(11, 1fr);
+        margin-bottom: 40px;
         border: 3px solid red;
     }
     .image1 {
         grid-column: 1 / span 3;
         max-width: 100%;
-        height: auto;
+        height: 100%;
         border: 3px solid red;
+        object-fit: cover;
     }
     .image2 {
         grid-column: span 4;
         max-width: 100%;
-        height: auto;
+        height: 100%;
         border: 3px solid red;
+        object-fit: cover;
     }
     .image3 {
         grid-column: span 4;
         max-width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
         border: 3px solid red;
     }
 
     .menu-item {
-        min-height: 60vh;
-        border: 3px solid green;
-        h2 {
-            text-transform: uppercase;
-            grid-column: span 4;
-            border: 3px solid green;
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        .dish {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            padding: 10px;
+            border-top: 3px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 2rem;
         }
-        span {
-            grid-column: span 6;
+        .food-name, .food-type, .price {
+            width: calc(33.333% - 20%);
+        }
+        .food-name {
+            text-transform: uppercase;
+            text-align: left;
+        }
+        .food-type {
+            text-align: center;
+        }
+        .price {
+            text-align: right;
         }
     }
 }
