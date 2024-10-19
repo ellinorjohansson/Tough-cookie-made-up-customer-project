@@ -13,13 +13,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 72px; // Samma bredd som den första kolumnen i `main`
+    width: 72px; 
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; // Detta håller knappen och h1 separerade
-    z-index: 10; // Se till att den ligger ovanpå allt annat
+    justify-content: space-between; 
+    z-index: 10; 
 }
 
 .menu {
@@ -112,16 +112,16 @@ input:checked + .menu nav {
 }
 
 .though-cookie {
-    writing-mode: vertical-rl; /* Vertikal text */
-    text-orientation: upright; /* Gör så att varje bokstav står upprätt */
-    text-transform: uppercase; /* Gör texten till versaler */
-    font-size: 2rem; /* Justera storleken efter behov */
-    color: white; /* Ändra färg om du vill */
+    writing-mode: vertical-rl; 
+    text-orientation: upright; 
+    text-transform: uppercase; 
+    font-size: 2rem;
+    color: white; 
     display: flex;
-    flex-direction: column; /* Gör så att varje bokstav ligger under varandra */
-    align-items: center; /* Centrera texten horisontellt */
-    margin: 0; /* Ta bort standardmarginaler */
-    padding: 0; /* Ta bort eventuell padding */
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0; 
     margin-top: 80px;
 }
 
@@ -140,17 +140,17 @@ input:checked + .menu nav {
         min-height: 50vh;
         .page-title {
             grid-column: span 4;
-            color: #00ff38;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             text-transform: uppercase;
-            position: relative;
         }
 
         .tahini {
+            position: relative;
+            color: #00ff38;
             font-size: 6rem;
             z-index: 1;
         }
@@ -160,8 +160,9 @@ input:checked + .menu nav {
             color: #895ed9;
             position: absolute;
             text-align: right;
-            top: 70px;
-            left: 217px;
+            left: 365px;
+            top: 96px;
+            
         }
 
         .chickpeas {
@@ -169,8 +170,8 @@ input:checked + .menu nav {
             color: #fff236;
             position: absolute;
             text-align: left;
-            left: 145px;
-            top: 170px;
+            top: 190px;
+            left: 270px;
             z-index: 0; 
         }
 
@@ -247,5 +248,28 @@ input:checked + .menu nav {
         span {
             grid-column: span 6;
         }
+    }
+}
+
+.page3 {
+    grid-column: 2 / span 11;
+    min-height: 100vh;
+    form, .company-info {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(11, 1fr);
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 5;
+        
+        border: 3px solid red;
+    }
+    .company-info {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 6;
+        border: 3px solid pink;
     }
 }
