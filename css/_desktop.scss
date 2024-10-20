@@ -188,8 +188,9 @@ input:checked + .menu nav {
         min-height: 50vh;
         .image {
             grid-column: span 5;
+            width: auto;
             max-width: 100%;
-            height: auto;
+            max-height: 400px;
         }
         .bottom-text {
             grid-column: span 6;
@@ -217,37 +218,36 @@ input:checked + .menu nav {
         gap: 16px;
         grid-template-columns: repeat(11, 1fr);
         margin-bottom: 40px;
-        max-height: 400px;
+        max-height: 380px;
         overflow: hidden;
     }
     .image1 {
         grid-column: 1 / span 3;
-        max-width: 100%;
-        height: 100%;
+        width: 100%;
+        max-height: auto;
         object-fit: cover;
         object-position: center;
     }
     .image2 {
         grid-column: span 4;
-        max-width: 100%;
-        height: 100%;
+        width: 100%;
+        max-height: auto;
         object-fit: cover;
         object-position: center;
     }
     .image3 {
         grid-column: span 4;
-        max-width: 100%;
-        height: 100%;
+        width: 100%;
+        max-height: auto;
         object-fit: cover;
         object-position: center;
     }
 
     .menu-item {
         display: grid;
-        gap: 10px; // Lägger till lite utrymme mellan varje rad.
-        grid-template-columns: 1fr 1fr 1fr; // Delar upp i tre lika breda kolumner.
+        gap: 10px; 
+        grid-template-columns: repeat(11, 1fr);
         margin-top: 16px;
-    
         .dish {
             background-color: rgba(255, 255, 255, 0.5);
             color: black;
@@ -255,43 +255,35 @@ input:checked + .menu nav {
             border-top: 3px solid black;
             border-bottom: 3px solid black;
             display: grid;
-            grid-template-columns: repeat(11, 1fr); // Tre lika breda kolumner för varje del av maträtten.
             align-items: center;
             margin-bottom: 10px;
             font-size: 1rem;
-        }
-    
+        }  
         .food-name {
-            grid-column: 1 / span 4; // Första kolumnen
+            grid-column: 1 / span 4; 
             text-transform: uppercase;
             text-align: left;
-        }
-    
+        }   
         .food-type {
-            grid-column: 5 / span 6; // Andra kolumnen
+            grid-column: 5 / span 6; 
             text-align: center;
-        }
-    
+        }   
         .price {
-            grid-column: 11 / span 1; // Tredje kolumnen
+            grid-column: 11 / span 1; 
             text-align: right;
-        }
-    
+        }   
         .tag {
             font-size: 0.8rem;
             padding: 2px 8px;
             border-radius: 3px;
             margin-left: 5px;
-        }
-    
+        }   
         .new-tag {
             background-color: #00ff38;
-        }
-    
+        }   
         .vegan-tag {
             background-color: #895ed9;
-        }
-    
+        }   
         .popular-tag {
             background-color: #fff236;
         }
