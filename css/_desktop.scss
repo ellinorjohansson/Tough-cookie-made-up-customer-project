@@ -246,31 +246,32 @@ input:checked + .menu nav {
     .menu-item {
         display: grid;
         gap: 10px; 
-        grid-template-columns: repeat(11, 1fr);
+        grid-template-columns: 1f;
         margin-top: 16px;
         .dish {
             background-color: rgba(255, 255, 255, 0.5);
+            grid-template-columns: repeat(11, 1fr);
             color: black;
-            padding: 10px;
+            padding: 5px 10px 5px 10px;
             border-top: 3px solid black;
             border-bottom: 3px solid black;
             display: grid;
             align-items: center;
             margin-bottom: 10px;
-            font-size: 1rem;
         }  
         .food-name {
             grid-column: 1 / span 4; 
             text-transform: uppercase;
-            text-align: left;
+            font-size: 2rem;
         }   
         .food-type {
             grid-column: 5 / span 6; 
-            text-align: center;
         }   
         .price {
             grid-column: 11 / span 1; 
             text-align: right;
+            font-weight: bold;
+            font-size: 2rem;
         }   
         .tag {
             font-size: 0.8rem;
@@ -279,10 +280,10 @@ input:checked + .menu nav {
             margin-left: 5px;
         }   
         .new-tag {
-            background-color: #00ff38;
+            background-color: #895ed9;
         }   
         .vegan-tag {
-            background-color: #895ed9;
+            background-color: #00ff38;
         }   
         .popular-tag {
             background-color: #fff236;
@@ -293,22 +294,35 @@ input:checked + .menu nav {
 .page3 {
     grid-column: 2 / span 11;
     min-height: 100vh;
-    form, .company-info {
-        display: grid;
-        gap: 16px;
-        grid-template-columns: repeat(11, 1fr);
-    }
+    background-color: #00ff38;
+    border-left: 16px solid white;
+    padding: 20px;
     form {
-        display: flex;
-        flex-direction: column;
         grid-column: span 5;
-        
+        display: flex;
         border: 3px solid red;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    .form-input {
+        border-radius: 15px;
+        border-style: none;
     }
     .company-info {
+        grid-column: span 6; /* Company-info tar upp 6 kolumner */
         display: flex;
         flex-direction: column;
-        grid-column: span 6;
+        align-items: flex-start; /* Justerar texten till vänster */
         border: 3px solid pink;
+        padding: 20px;
+        color: white
+    }
+    .form-submit {
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-top: 10px;
     }
 }
