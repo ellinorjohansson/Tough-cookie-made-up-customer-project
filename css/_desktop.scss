@@ -309,6 +309,13 @@ input:checked + .menu nav {
         border-radius: 15px;
         border-style: none;
     }
+    .form-submit {
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
     .company-info {
         grid-column: span 6; /* Company-info tar upp 6 kolumner */
         display: flex;
@@ -318,11 +325,5 @@ input:checked + .menu nav {
         padding: 20px;
         color: white
     }
-    .form-submit {
-        border-radius: 15px;
-        padding: 10px;
-        font-size: 2rem;
-        text-transform: uppercase;
-        margin-top: 10px;
-    }
+    
 }
