@@ -281,12 +281,15 @@ input:checked + .menu nav {
         }   
         .new-tag {
             background-color: #895ed9;
-        }   
+            font-family: 'Courier New', Courier, monospace;
+        }  
         .vegan-tag {
             background-color: #00ff38;
+            font-family: 'Courier New', Courier, monospace;
         }   
         .popular-tag {
             background-color: #fff236;
+            font-family: 'Courier New', Courier, monospace;
         }
     }    
 }
