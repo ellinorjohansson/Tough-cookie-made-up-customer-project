@@ -390,9 +390,24 @@ label span {
     grid-column: span 6;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    border: 3px solid pink;
+    align-items: center;
     padding: 20px;
     color: white;
+    .info-background {
+        max-width: 80%;
+        height: auto;
+        filter: blur(2px);
+    }
+    .book-tel {
+        color: #36a8ce;
+    }
+    .book-mail {
+        color: #36a8ce;
+    }
+    .book-adress {
+        color: #36a8ce;
+    }
 }
+
+
 
