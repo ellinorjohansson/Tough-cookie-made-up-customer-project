@@ -107,8 +107,8 @@
     </div>
     
     <div class="page3">
-      <h2>Book your table</h2>
       <form action="#">
+        <h2 class="form-title">Book your table</h2>
         <label>
           <span>Name</span>
           <input class="form-input" type="text" name="name" required>
@@ -133,7 +133,10 @@
           <span>Allergies</span>
           <input class="form-input" type="text" name="allergies">
         </label>
-        <input class="form-submit" type="submit" value="Send">
+        <div class="buttons-wrapper">
+          <input class="form-cancel" type="reset" value="Reset">
+          <input class="form-request" type="submit" value="Submit">
+        </div>
       </form>
 
       <section class="company-info">
