@@ -191,6 +191,16 @@ input:checked + .menu nav {
             width: auto;
             max-width: 100%;
             max-height: 400px;
+            left: 11%;
+            position: relative;
+        }
+        .salad-arrow {
+            position: absolute;
+            left: 10%;
+            bottom: 0;
+            width: 70px;
+            height: 70px; 
+            transform: rotate(90deg);
         }
         .bottom-text {
             grid-column: span 6;
@@ -203,8 +213,18 @@ input:checked + .menu nav {
         }
         .explore-menu {
             color: black;
+            text-decoration: none;
             text-transform: uppercase;
-            display: block;
+            display: inline-block;
+            position: relative;
+            .text-arrow {
+                display: inline-block;
+                position: absolute;
+                padding-left: 10px;
+            }
+        }
+        .explore-menu:hover {
+            text-decoration: underline;
         }
     }
 }
