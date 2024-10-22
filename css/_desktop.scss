@@ -323,119 +323,153 @@ input:checked + .menu nav {
     background-color: #00ff38;
     border-left: 16px solid white;
     padding: 20px;
+    form {
+        grid-column: span 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px; 
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .form-title {
+        margin-bottom: 5px;
+        font-size: 2.5rem;
+    }
+    label {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        width: 100%;
+    }
+    label span {
+        flex: 1; 
+        font-size: 1.5rem;
+    }
+    .form-input {
+        flex: 2; 
+        border-radius: 15px;
+        padding: 5px;
+        border-style: none;
+        width: 100%;
+    }
+    .buttons-wrapper {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+    }
+    .form-cancel, .form-request {
+        flex: 1;
+        border-radius: 15px;
+        padding: 8px 16px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-top: 10px;
+        border-style: none;
+    }
+    .form-cancel {
+        background-color: #895ed9;
+        cursor: pointer;
+    }
+    .form-request {
+        background-color: #fff236;
+        cursor: pointer;
+    }
+    .company-info {
+        grid-column: span 6;
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
+        position: relative;
+        color: white;
+    }
+    .info-background {
+        max-width: 80%;
+        height: auto;
+        filter: blur(3px);       
+        margin: 0 auto;         
+    }
+    .info-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        display: flex;
+        flex-direction: column;  
+        align-items: flex-start; 
+        color: white;
+        text-align: left;        
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+    }
+    .info-row {
+        display: flex;
+        align-items: center;     
+        padding: 10px;
+        width: 100%;
+        font-size: 1.5rem;             
+    }
+    .info-row img {
+        margin-right: 10px;     
+    }
+    .book-tel, .book-mail, .book-adress, .book-place {
+        color: #36a8ce;
+        font-weight: bold;
+    }
+    .book-adress {
+        position: relative;
+    }
+    .book-place {
+        position: absolute;
+        left: 16%;
+        top: 80%; 
+    }
 }
-
-form {
-    grid-column: span 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px; 
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    width: 100%;
-    box-sizing: border-box;
+footer {
+    z-index: 4000;
 }
-
-.form-title {
-    margin-bottom: 5px;
-    font-size: 2.5rem;
-}
-
-label {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%;
-}
-
-label span {
-    flex: 1; 
-    font-size: 1.5rem;
-}
-
-.form-input {
-    flex: 2; 
-    border-radius: 15px;
-    padding: 5px;
-    border-style: none;
-    width: 100%;
-}
-
-.buttons-wrapper {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-}
-
-.form-cancel, .form-request {
-    flex: 1;
-    border-radius: 15px;
-    padding: 8px 16px;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-top: 10px;
-    border-style: none;
-}
-
-.form-cancel {
-    background-color: #895ed9;
-    cursor: pointer;
-}
-
-.form-request {
-    background-color: #fff236;
-    cursor: pointer;
-}
-
-.company-info {
-    grid-column: span 6;
-    display: flex;
-    justify-content: center;  
-    align-items: center;      
+.cookie-banner {
     position: relative;
+    background-color: #ac76ff;
     color: white;
-}
-
-.info-background {
-    max-width: 80%;
-    height: auto;
-    filter: blur(3px);       
-    margin: 0 auto;         
-}
-
-.info-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    display: flex;
-    flex-direction: column;  
-    align-items: flex-start; 
-    color: white;
-    text-align: left;        
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
-}
-
-.info-row {
-    display: flex;
-    align-items: center;     
-    padding: 10px;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    font-size: 1.5rem;             
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cookie-buttons{
+        display: flex;
+        gap: 10px;
+        margin-right: 10%;
+    }
+    .cookie-banner, p {
+        padding-left: 15%;
+        font-size: 1.5rem;
+    }
+    .decline-button,
+    .accept-button {
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 5px 35px;
+    }
+    .decline-button {
+        background-color: #fff236;
+        color: black;
+    }
+    .accept-button {
+        background-color: #00ff38;
+        color: black;
+    }
 }
 
-.info-row img {
-    margin-right: 10px;     
-}
-
-.book-tel, .book-mail, .book-adress {
-    color: #36a8ce;
-    font-weight: bold;
-}
 
 
-
-
-
+  
+  
 
