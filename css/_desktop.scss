@@ -380,34 +380,62 @@ label span {
 
 .form-cancel {
     background-color: #895ed9;
+    cursor: pointer;
 }
 
 .form-request {
     background-color: #fff236;
+    cursor: pointer;
 }
 
 .company-info {
     grid-column: span 6;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    justify-content: center;  
+    align-items: center;      
+    position: relative;
     color: white;
-    .info-background {
-        max-width: 80%;
-        height: auto;
-        filter: blur(2px);
-    }
-    .book-tel {
-        color: #36a8ce;
-    }
-    .book-mail {
-        color: #36a8ce;
-    }
-    .book-adress {
-        color: #36a8ce;
-    }
 }
+
+.info-background {
+    max-width: 80%;
+    height: auto;
+    filter: blur(3px);       
+    margin: 0 auto;         
+}
+
+.info-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start; 
+    color: white;
+    text-align: left;        
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+}
+
+.info-row {
+    display: flex;
+    align-items: center;     
+    padding: 10px;
+    width: 100%;
+    font-size: 1.5rem;             
+}
+
+.info-row img {
+    margin-right: 10px;     
+}
+
+.book-tel, .book-mail, .book-adress {
+    color: #36a8ce;
+    font-weight: bold;
+}
+
+
+
 
 
 
