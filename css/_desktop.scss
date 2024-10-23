@@ -1,6 +1,6 @@
 body {
-    font-family: 'Jockey One', 'Roboto Condensed', sans-serif;
-    background-color: #fff236;
+    font-family: $font-family;
+    background-color: $background-color;
 }
 
 main {
@@ -43,7 +43,7 @@ button {
         display: block;
         width: 50px;
         height: 8px;
-        background-color: #fff236;
+        background-color: $background-color;
         border-radius: 8px;
         margin-bottom: 8px;
     }
@@ -85,7 +85,7 @@ nav {
     position: fixed;
     top: 0;
     left: 110px;
-    background-color: #ac76ff;
+    background-color: $secondary-color;
     width: 100vw;
     height: 100vh;
     opacity: 0;
@@ -128,7 +128,7 @@ input:checked + .menu nav {
 .page1 {
     grid-column: 2 / span 11;
     min-height: 100vh;
-    border-right: 16px solid #fff236;
+    border-right: 16px solid $background-color;
     .top, .bottom {
         display: grid;
         gap: 16px;
@@ -150,14 +150,14 @@ input:checked + .menu nav {
 
         .tahini {
             position: relative;
-            color: #00ff38;
+            color: $text-color-green;
             font-size: 6rem;
             z-index: 1;
         }
 
         .drizzle {
             font-size: 2.5rem;
-            color: #895ed9;
+            color: $text-color-purple;
             position: absolute;
             text-align: right;
             left: 24%;
@@ -167,7 +167,7 @@ input:checked + .menu nav {
 
         .chickpeas {
             font-size: 2.5rem;
-            color: #fff236;
+            color: $background-color;
             position: absolute;
             text-align: left;
             top: 30%;
@@ -177,7 +177,7 @@ input:checked + .menu nav {
 
         .top-text {
             grid-column: span 7;
-            color: #00ff38;
+            color: $text-color-green;
             font-size: 2rem;
             text-align: left;
             padding: 60px;
@@ -204,12 +204,12 @@ input:checked + .menu nav {
         }
         .bottom-text {
             grid-column: span 6;
-            color: #895ed9;
+            color: $text-color-purple;
             background-color: #ffffff;
             font-size: 2rem;
             text-align: left;
             padding: 20px;
-            border-left: 16px solid #fff236;
+            border-left: 16px solid $background-color;
         }
         .explore-menu {
             color: black;
@@ -232,33 +232,33 @@ input:checked + .menu nav {
 .page2 {
     grid-column: 2 / span 11;
     min-height: 100vh;
-    border-right: 16px solid #fff236;
+    border-right: 16px solid $background-color;
     .base-grid {
         display: grid;
         gap: 16px;
         grid-template-columns: repeat(11, 1fr);
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         max-height: 380px;
         overflow: hidden;
     }
     .image1 {
         grid-column: 1 / span 3;
         width: 100%;
-        max-height: auto;
+        height: 70%;
         object-fit: cover;
         object-position: center;
     }
     .image2 {
         grid-column: span 4;
         width: 100%;
-        max-height: auto;
+        height: 70%;
         object-fit: cover;
         object-position: center;
     }
     .image3 {
         grid-column: span 4;
         width: 100%;
-        max-height: auto;
+        height: 70%;
         object-fit: cover;
         object-position: center;
     }
@@ -299,16 +299,16 @@ input:checked + .menu nav {
             margin-left: 5px;
         }   
         .new-tag {
-            background-color: #895ed9;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: $secondary-color;
+            font-family: $secondary-font;
         }  
         .vegan-tag {
-            background-color: #00ff38;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: $background-color-green;
+            font-family: $secondary-font;
         }   
         .popular-tag {
-            background-color: #fff236;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: $background-color;
+            font-family: $secondary-font;
         }
     }    
 }
@@ -319,7 +319,7 @@ input:checked + .menu nav {
     grid-gap: 20px;
     grid-column: 2 / span 11;
     min-height: 100vh;
-    background-color: #00ff38;
+    background-color: $background-color-green;
     border-left: 16px solid white;
     padding: 20px;
     form {
@@ -369,11 +369,11 @@ input:checked + .menu nav {
         border-style: none;
     }
     .form-cancel {
-        background-color: #895ed9;
+        background-color: $secondary-color;
         cursor: pointer;
     }
     .form-request {
-        background-color: #fff236;
+        background-color: $background-color;
         cursor: pointer;
     }
     .company-info {
@@ -413,7 +413,7 @@ input:checked + .menu nav {
         margin-right: 10px;     
     }
     .book-tel, .book-mail, .book-adress, .book-place {
-        color: #36a8ce;
+        color: $text-color-blue;
         font-weight: bold;
     }
     .book-adress {
@@ -430,7 +430,7 @@ footer {
 }
 .cookie-banner {
     position: relative;
-    background-color: #ac76ff;
+    background-color: $secondary-color;
     color: white;
     width: 100%;
     padding: 15px;
@@ -456,11 +456,11 @@ footer {
         padding: 5px 40px;
     }
     .decline-button {
-        background-color: #fff236;
+        background-color: $background-color;
         color: black;
     }
     .accept-button {
-        background-color: #00ff38;
+        background-color: $background-color-green;
         color: black;
     }
 }

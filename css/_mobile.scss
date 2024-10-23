@@ -1,6 +1,6 @@
 body {
-    font-family: 'Jockey One', 'Roboto Condensed', sans-serif;
-    background-color: #fff236;
+    font-family: $font-family;
+    background-color: $background-color;
 }
 
 main {
@@ -28,7 +28,7 @@ header {
     background-color: black;
     color: white;
     padding: 20px;
-    border-bottom: 16px solid #fff236;
+    border-bottom: 16px solid $background-color;
     z-index: 10;
     h1 {
         margin: 0;
@@ -55,7 +55,7 @@ button {
         display: block;
         width: 50px;
         height: 8px;
-        background-color: #fff236;
+        background-color: $background-color;
         border-radius: 8px;
         margin-bottom: 8px;
     }
@@ -101,7 +101,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ac76ff;
+    background-color: $secondary-color;
     width: 100vw;
     height: 100vh;
     opacity: 0;
@@ -152,14 +152,14 @@ input:checked + .menu nav {
 
         .tahini {
             position: relative;
-            color: #00ff38;
+            color: $text-color-green;
             font-size: 6rem;
             z-index: 1;
         }
 
         .drizzle {
             font-size: 2.5rem;
-            color: #895ed9;
+            color: $text-color-purple;
             position: absolute;
             text-align: right;
             left: 49%;
@@ -168,7 +168,7 @@ input:checked + .menu nav {
 
         .chickpeas {
             font-size: 2.5rem;
-            color: #fff236;
+            color: $text-color-yellow;
             position: absolute;
             text-align: left;
             left: 26%;
@@ -177,7 +177,7 @@ input:checked + .menu nav {
         }
 
         .top-text {
-            color: #00ff38;
+            color: $text-color-green;
             font-size: 2rem;
             text-align: left;
             padding: 20px;
@@ -201,12 +201,12 @@ input:checked + .menu nav {
             transform: rotate(90deg);
         }
         .bottom-text {
-            color: #895ed9;
+            color: $text-color-purple;
             background-color: #ffffff;
             font-size: 2rem;
             text-align: left;
             padding: 20px;
-            border-left: 16px solid #fff236;
+            border-left: 16px solid $background-color;
         }
         .explore-menu {
             color: black;
@@ -285,16 +285,16 @@ input:checked + .menu nav {
             margin-left: 5px;
         }   
         .new-tag {
-            background-color: #895ed9;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: $secondary-color;
+            font-family: $secondary-font;
         }  
         .vegan-tag {
-            background-color: #00ff38;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: $secondary-color;
+            font-family: $secondary-font;
         }   
         .popular-tag {
-            background-color: #fff236;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: $background-color;
+            font-family: $secondary-font;
         }
     }    
 }
@@ -303,7 +303,7 @@ input:checked + .menu nav {
     display: grid;
     grid-gap: 20px;
     min-height: 100vh;
-    background-color: #00ff38;
+    background-color: $secondary-color;
     border-left: 16px solid white;
     padding: 20px;
     form {
@@ -352,11 +352,11 @@ input:checked + .menu nav {
         border-style: none;
     }
     .form-cancel {
-        background-color: #895ed9;
+        background-color: $secondary-color;
         cursor: pointer;
     }
     .form-request {
-        background-color: #fff236;
+        background-color: $background-color;
         cursor: pointer;
     }
     .company-info {
@@ -397,7 +397,7 @@ input:checked + .menu nav {
         margin-right: 10px;     
     }
     .book-tel, .book-mail, .book-adress, .book-place {
-        color: #36a8ce;
+        color: $text-color-blue;
         font-weight: bold;
     }
     .book-adress {
@@ -414,7 +414,7 @@ footer {
 }
 .cookie-banner {
     position: relative;
-    background-color: #ac76ff;
+    background-color: $secondary-color;
     color: white;
     bottom: 0;
     left: 0;
@@ -440,11 +440,11 @@ footer {
         padding: 5px 40px;
     }
     .decline-button {
-        background-color: #fff236;
+        background-color: $background-color;
         color: black;
     }
     .accept-button {
-        background-color: #00ff38;
+        background-color: $secondary-color;
         color: black;
     }
 }
