@@ -140,40 +140,42 @@ input:checked + .menu nav {
     }
 
     .top {
-        .page-title {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+        .page-title {            
+            grid-column: span 5;
             text-transform: uppercase;
-            padding-top: 30px;
-        }
-
-        .tahini {
             position: relative;
-            color: $text-color-green;
-            font-size: 6rem;
-            z-index: 1;
-        }
+            min-width: 300px;
+            min-height: 300px;
 
-        .drizzle {
-            font-size: 2.5rem;
-            color: $text-color-purple;
-            position: absolute;
-            text-align: right;
-            left: 49%;
-            top: 13%;
-        }
+            div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    
+            .drizzle, .chickpeas {
+                position: absolute;
+            }
 
-        .chickpeas {
-            font-size: 2.5rem;
-            color: $text-color-yellow;
-            position: absolute;
-            text-align: left;
-            left: 37%;
-            top: 21%;
-            z-index: 0; 
+            .tahini {
+                color: $text-color-green;
+                font-size: 6rem;
+            }
+    
+            .drizzle {
+                color: $text-color-purple;
+                top: -25px;
+                font-size: 2.57rem;
+            }
+    
+            .chickpeas {
+                color: $background-color;
+                left: 10px;
+                top: 74px;
+                font-size: 2.50rem;
+                z-index: -1;
+            }
         }
 
         .top-text {
