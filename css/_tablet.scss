@@ -163,7 +163,7 @@ input:checked + .menu nav {
             position: absolute;
             text-align: right;
             left: 49%;
-            top: 19%;
+            top: 13%;
         }
 
         .chickpeas {
@@ -172,7 +172,7 @@ input:checked + .menu nav {
             position: absolute;
             text-align: left;
             left: 37%;
-            top: 31%;
+            top: 21%;
             z-index: 0; 
         }
 
@@ -186,16 +186,17 @@ input:checked + .menu nav {
     
     .bottom {
         min-height: 50vh;
-        .image {
-            width: 80%;
-            height: auto;
-            left: 25%;
+        .image-container {
             position: relative;
         }
+        .image {
+            width: auto;
+            max-height: 400px;
+        }
         .salad-arrow {
-            position: absolute;
+            position: relative;
             left: 10%;
-            bottom: 0;
+            bottom: 10%;
             width: 70px;
             height: 70px; 
             transform: rotate(90deg);

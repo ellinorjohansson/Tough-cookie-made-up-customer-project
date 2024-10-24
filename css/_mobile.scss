@@ -186,16 +186,18 @@ input:checked + .menu nav {
     
     .bottom {
         min-height: 50vh;
-        .image {
-            width: 80%;
-            height: auto;
-            left: 25%;
+        .image-container {
             position: relative;
         }
+        .image {
+            width: auto;
+            max-height: 400px;
+            left: 11%;
+        }
         .salad-arrow {
-            position: absolute;
+            position: relative;
             left: 10%;
-            bottom: 5%;
+            bottom: 10%;
             width: 70px;
             height: 70px; 
             transform: rotate(90deg);
