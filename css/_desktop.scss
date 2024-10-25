@@ -147,29 +147,24 @@ input:checked + .menu nav {
             position: relative;
             min-width: 300px;
             min-height: 300px;
-
             div {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-            }
-    
+            }   
             .drizzle, .chickpeas {
                 position: absolute;
             }
-
             .tahini {
                 color: $text-color-green;
                 font-size: 6rem;
             }
-    
             .drizzle {
                 color: $text-color-purple;
                 top: -25px;
                 font-size: 2.57rem;
             }
-    
             .chickpeas {
                 color: $background-color;
                 left: 10px;
@@ -184,8 +179,6 @@ input:checked + .menu nav {
             font-size: 2rem;
             text-align: left;
             padding: 60px;
-
-            
         }
     }
     
@@ -199,7 +192,6 @@ input:checked + .menu nav {
             width: auto;
             max-width: 100%;
             max-height: 400px;
-            left: 22%;
         }
         .salad-arrow {
             position: relative;
@@ -289,13 +281,13 @@ input:checked + .menu nav {
             border-top: 3px solid black;
             border-bottom: 3px solid black;
             display: grid;
-            align-items: center;
             margin-bottom: 10px;
         }  
         .food-name {
             grid-column: 1 / span 4; 
             text-transform: uppercase;
             font-size: 2rem;
+            white-space: nowrap;
         }   
         .food-type {
             grid-column: 5 / span 6; 
@@ -306,22 +298,76 @@ input:checked + .menu nav {
             font-weight: bold;
             font-size: 2rem;
         }   
-        .tag {
-            font-size: 0.8rem;
-            padding: 2px 8px;
-            margin-left: 5px;
-        }   
-        .new-tag {
+        .tag-color-green, .tag-color-purple, .tag-color-yellow {
+            display: flex;
+            margin-left: auto;
+            font-size: 1rem;
+        }
+        .tag-color-purple {
+            display: flex;
+            justify-content: center;
             background-color: $secondary-color;
-            font-family: $secondary-font;
+            transform: rotate(1deg);
+            display: inline-block;
+            padding-left: 7px;
+            padding-right: 7px;
+            text-transform: uppercase;
+            span {
+                transform: rotate(-1deg);
+                font-family: $secondary-font;
+                display: inline-block;
+            }
         }  
-        .vegan-tag {
+        .tag-type-new {
+            grid-column: 4 / span 6;
+        }
+        .food-purple-tag {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .tag-type-vegan {
+            grid-column: 3 / span 6;
+            padding-left: 50px;
+        }
+        .tag-color-green {
+            transform: rotate(-3deg);
+            display: inline-block;
+            padding-left: 7px;
+            padding-right: 7px;
             background-color: $background-color-green;
-            font-family: $secondary-font;
-        }   
-        .popular-tag {
+            text-transform: uppercase;
+            span {
+                transform: rotate(3deg);
+                font-family: $secondary-font;
+                display: inline-block;
+            }
+        } 
+        .tag-type-popular {
+            grid-column: 4 / span 6;
+            padding-left: 50px;
+
+        }
+        .food-green-tag {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }       
+        .tag-color-yellow {
             background-color: $background-color;
-            font-family: $secondary-font;
+            text-transform: uppercase;
+            display: inline-block;
+            padding-left: 7px;
+            padding-right: 7px;
+            span {
+                font-family: $secondary-font;
+                display: inline-block;
+            }
+        }
+        .food-yellow-tag {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
     }    
 }
@@ -400,7 +446,7 @@ input:checked + .menu nav {
     .info-background {
         max-width: 80%;
         height: auto;
-        filter: blur(3px);       
+        filter: blur(4px);       
         margin: 0 auto;         
     }
     .info-text {

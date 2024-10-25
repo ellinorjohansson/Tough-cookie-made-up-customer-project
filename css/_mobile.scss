@@ -180,7 +180,7 @@ input:checked + .menu nav {
 
         .top-text {
             color: $text-color-green;
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: left;
             padding: 20px;
         }
@@ -207,7 +207,7 @@ input:checked + .menu nav {
         .bottom-text {
             color: $text-color-purple;
             background-color: #ffffff;
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: left;
             padding: 20px;
             border-left: 16px solid $background-color;
@@ -282,23 +282,52 @@ input:checked + .menu nav {
             font-size: 2rem;
             display: block;
         }   
-        .tag {
-            font-size: 0.8rem;
-            padding: 2px 8px;
-            border-radius: 3px;
-            margin-left: 5px;
-        }   
-        .new-tag {
+        .tag-color-green, .tag-color-purple, .tag-color-yellow {
+            display: flex;
+            margin-left: auto;
+            font-size: 1rem;
+        }
+        .tag-color-purple {
+            display: flex;
+            justify-content: center;
             background-color: $secondary-color;
-            font-family: $secondary-font;
+            transform: rotate(1deg);
+            display: inline-block;
+            padding-left: 7px;
+            padding-right: 7px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            span {
+                transform: rotate(-1deg);
+                font-family: $secondary-font;
+                display: inline-block;
+            }
         }  
-        .vegan-tag {
-            background-color: $secondary-color;
-            font-family: $secondary-font;
-        }   
-        .popular-tag {
+        .tag-color-green {
+            transform: rotate(-3deg);
+            display: inline-block;
+            padding-left: 7px;
+            padding-right: 7px;
+            background-color: $background-color-green;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            span {
+                transform: rotate(3deg);
+                font-family: $secondary-font;
+                display: inline-block;
+            }
+        }        
+        .tag-color-yellow {
             background-color: $background-color;
-            font-family: $secondary-font;
+            text-transform: uppercase;
+            display: inline-block;
+            padding-left: 7px;
+            padding-right: 7px;
+            margin-bottom: 10px;
+            span {
+                font-family: $secondary-font;
+                display: inline-block;
+            }
         }
     }    
 }
@@ -375,7 +404,7 @@ input:checked + .menu nav {
     .info-background {
         max-width: 100%;
         height: auto;
-        filter: blur(3px);       
+        filter: blur(4px);       
         margin: 0 auto;         
     }
     .info-text {
