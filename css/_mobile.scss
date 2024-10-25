@@ -405,7 +405,7 @@ input:checked + .menu nav {
         max-width: 100%;
         height: auto;
         filter: blur(4px);       
-        margin: 0 auto;         
+        margin: 0 auto; 
     }
     .info-text {
         position: absolute;
@@ -417,7 +417,9 @@ input:checked + .menu nav {
         align-items: flex-start; 
         color: white;
         text-align: left;        
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); 
+        /*För att öka kontrasten så tillgängligheten blir bättre*/
+        background-color: rgba(0, 0, 0, 0.7);
     }
     .info-row {
         display: flex;
