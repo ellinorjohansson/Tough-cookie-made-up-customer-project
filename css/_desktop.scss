@@ -45,11 +45,7 @@ button {
         background-color: $background-color;
         border-radius: 8px;
         margin-bottom: 8px;
-        transition: transform 0.5s ease;
     }
-}
-button:hover span {
-    transform: translateX(10px);
 }
 
 .checkbox {
@@ -78,6 +74,10 @@ button:hover span {
 
 .checkbox:checked + .menu span:nth-child(3) {
     transform: rotate(-45deg);
+}
+
+.checkbox:hover ~ .menu span {
+    transform: translateX(10px);
 }
 
 nav {
