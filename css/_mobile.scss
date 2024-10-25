@@ -120,6 +120,15 @@ nav {
         align-items: center;
         justify-content: center;
         height: 100%;
+        .li-home:hover  {
+            text-decoration: underline;
+        }
+        .li-menu:hover {
+            text-decoration: underline;
+        }
+        .li-book:hover {
+            text-decoration: underline;
+        }
     }
 }
 
