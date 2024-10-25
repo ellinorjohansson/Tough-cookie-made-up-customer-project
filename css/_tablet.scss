@@ -147,7 +147,7 @@ input:checked + .menu nav {
             min-width: 300px;
             min-height: 300px;
 
-            div {
+            span {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -165,14 +165,14 @@ input:checked + .menu nav {
     
             .drizzle {
                 color: $text-color-purple;
-                top: -25px;
+                top: -55px;
                 font-size: 2.57rem;
             }
     
             .chickpeas {
                 color: $background-color;
-                left: 10px;
-                top: 74px;
+                left: -30px;
+                top: 38px;
                 font-size: 2.50rem;
                 z-index: -1;
             }
