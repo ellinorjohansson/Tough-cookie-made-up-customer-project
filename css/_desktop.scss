@@ -1,8 +1,3 @@
-body {
-    font-family: $font-family;
-    background-color: $background-color;
-}
-
 main {
     display: grid;
     grid-template-columns: 110px repeat(11, 1fr);
@@ -106,6 +101,18 @@ nav {
         flex-direction: column;
         height: 100%;
         justify-content: space-evenly;
+    }
+    .li-home:hover  {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .li-menu:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .li-book:hover {
+        text-decoration: underline;
+        cursor: pointer;
     }
 }
 

@@ -42,7 +42,7 @@ header {
     z-index: 11;
 }
 
-button {
+.menu-button {
     width: 70px;
     height: 70px;
     background: transparent;
@@ -120,15 +120,6 @@ nav {
         align-items: center;
         justify-content: center;
         height: 100%;
-        .li-home:hover  {
-            text-decoration: underline;
-        }
-        .li-menu:hover {
-            text-decoration: underline;
-        }
-        .li-book:hover {
-            text-decoration: underline;
-        }
     }
 }
 
