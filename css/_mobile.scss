@@ -440,17 +440,27 @@ input:checked + .menu nav {
     .info-row img {
         margin-right: 10px;     
     }
+    
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }
+    .call-blue, .email-blue, .location-blue {
+        color: $text-color-blue;
+    }
     .book-tel, .book-mail, .book-adress, .book-place {
         color: $text-color-blue;
         font-weight: bold;
+        margin-left: 10px;
     }
     .book-adress {
         position: relative;
     }
     .book-place {
         position: absolute;
-        left: 16%;
-        top: 80%; 
     }
 }
 footer {

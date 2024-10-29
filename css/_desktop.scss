@@ -472,18 +472,6 @@ input:checked + .menu nav {
     .info-row img {
         margin-right: 10px;     
     }
-    .book-tel, .book-mail, .book-adress, .book-place {
-        color: $text-color-blue;
-        font-weight: bold;
-    }
-    .book-adress {
-        position: relative;
-    }
-    .book-place {
-        position: absolute;
-        left: 16%;
-        top: 80%; 
-    }
 }
 footer {
     z-index: 4000;
