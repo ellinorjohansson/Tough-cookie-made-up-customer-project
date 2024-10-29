@@ -29,7 +29,7 @@ header {
     z-index: 11;
 }
 
-button {
+.menu-button {
     width: 70px;
     height: 70px;
     background: transparent;
@@ -109,7 +109,7 @@ nav {
     }
 }
 
-input:checked + .menu nav {
+.checkbox:checked + .menu nav {
     visibility: visible;
     opacity: 1;
 }
