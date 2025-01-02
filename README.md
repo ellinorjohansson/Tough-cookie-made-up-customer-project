@@ -1,1 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3GX3QKax)
+# Though Cookie
+
+Task with the aim of learning the basics of the HTML/CSS course where the goal was a website based on a wireframe from a customer.
+
+## Technical overview
+
+In this project, the following technologies and tools have been used:
+
+- **HTML** – The structure of the web page.
+- **SASS** – For styling.
+
+## Authors
+
+- [@ellinorjohansson](https://github.com/ellinorjohansson)
