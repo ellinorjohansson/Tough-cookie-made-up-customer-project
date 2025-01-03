@@ -9,6 +9,24 @@ In this project, the following technologies and tools have been used:
 - **HTML** – The structure of the web page.
 - **SASS** – For styling.
 
+## Installation
+
+Install locally with npm:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/ellinorjohansson/Tough-cookie-made-up-customer-project
+
+# Go into the repository
+$ cd Tough-cookie-made-up-customer-project
+
+# Install dependencies
+$ npm install
+
+# Run app
+$ npm run dev
+```
+
 ## Authors
 
 - [@ellinorjohansson](https://github.com/ellinorjohansson)
